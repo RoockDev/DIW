@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: azure;
+}
+
+.contenedor{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: rgb(250, 255, 255);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.titulos-azules{
+    color: blue;
+}
+
+#barra-navegacion{
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: blue;
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+#titulo{
+    font-size: 55px;
+}
+
+label{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.fila{
+   
+    display: flex;
+    gap: 250px; 
+}
+
+
+.radio-botones ,.checkbox-botones  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+     
+}
+
+.radio-botones{
+    border-bottom: 1px solid black;
+}
+
+.botones{
+    display: flex;
+    margin-top: 20px;
+}
+
+button{
+    width: 450px;
+    height: 40px;
+    cursor: pointer;
+}
+
+input,select,textarea,button{
+
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th,td{
+    border:1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+

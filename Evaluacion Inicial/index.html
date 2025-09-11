@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+    <h1 id="titulo">Demostración de Elementos HTML Básicos</h1>
+    
+        <p>Ejemplo con cabeceras, enlaces, listas, imágenes, tablas y formularios (select y textarea incluidos).</p>
+        <ul id="barra-navegacion">
+            <li>Cabeceras</li>
+            <li>Enlaces</li>
+            <li>Listas</li>
+            <li>Imágenes</li>
+            <li>Tablas</li>
+            <li>Formularios</li>
+        </ul>
+    </div>
+
+    <div class="contenedor">
+        <h1 class="titulos-azules">Cabeceras</h1>
+        <h1>Titulo Principal</h1>
+        <h1 class="titulos-azules">Subtítulo</h2>
+        <h2>Sección</h3>
+        <h3>Subsección</h4>
+        <h4>Detalle</h5>
+        <h5>Nota</h6>
+    </div>
+
+    <div class="contenedor">
+        <h1 class="titulos-azules">Enlaces</h1>
+        <p>Enlace externo: <a href="">MDN Web Docs</a></p>
+        <p>Enlace interno: <a href="">Ir al formulario</a></p>
+       
+    </div>
+
+    <div class="contenedor">
+        <h1 class="titulos-azules">Listas</h1>
+        <h2>Lista desordenada</h2>
+        <ul>
+            <li>CPU</li>
+            <li>RAM</li>
+            <li>Placa base</li>
+        </ul>
+
+        <h2>Lista ordenada</h2>
+        <ol>
+            <li>Encender equipo</li>
+            <li>Iniciar sesión</li>
+            <li>Abrir un navegador</li>
+        </ol>
+
+        <h2>Lista de definiciones</h2>
+    </div>
+
+    
+
+    <div class="contenedor">
+        <h1 class="titulos-azules">Imágenes</h1>
+        <p>Imagen de ejemplo (usa un servicio de imágenes aleatorias)</p>
+        <img src="https://picsum.photos/800/600" alt="Imagen aleatoria">
+    </div>
+
+    <div class="contenedor">
+        <h1 class="titulos-azules">Tabla</h1>
+        <p>Tabla con especificaciones básicas</p>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Ejemplo</th>
+                <th>Notas</th>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td>4 nucleos</td>
+                <td>Frecuencia variable</td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>16 GB</td>
+                <td>DDR4 o DDR5</td>
+            </tr>
+
+            <tr>
+                <td>Almacenamiento</td>
+                <td>512 GB SSD</td>
+                <td>NVMe recomendado</td>
+            </tr>
+        </table>
+    </div>
+
+    <form class="contenedor">
+        <h1 class="titulos-azules">Formulario de ejemplo</h1>
+        <div class="fila">
+            <label>Nombre
+                <input type="text" name="nombre" placeholder="tu nombre">
+            </label>
+            <label>Correo electrónico
+                <input type="email" placeholder="tucorreo@ejemplo.com">                
+            </label>
+        </div>
+        
+
+        
+        <label>Edad
+            <input type="number">
+        </label>
+
+        <label>Caja de lista de opciones
+            <select>
+                <option value="selecciona">--Selecciona--</option>
+                <option value="opcion 1">Opcion 1</option>
+                <option value="opcion 1">Opcion 2</option>
+            </select>
+        </label>
+
+        <label>Texto / Comentario (textarea)
+            <textarea name="comentario" placeholder="Escribe tu comentario...."></textarea>
+        </label>
+        
+        <label>Tipo de equipo</label>
+        <div class="radio-botones">
+                
+                    <input type="radio" > Sobremesa     
+                
+                
+            
+                
+                    <input type="radio"> Pórtatil
+                
+            
+                
+            
+        </div>
+
+        <label>Accesorios</label>
+        <div class="checkbox-botones">
+                
+                    <input type="checkbox"> Ratón
+                
+                
+            
+
+                
+                    <input type="checkbox"> Teclado
+                
+                
+            
+                
+                    <input type="checkbox"> Cascos
+                
+            
+                
+            
+
+        </div>
+
+        <div class="botones">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+
+        </div>
+
+    </form>
+
+
+    
+</body>
+</html>
