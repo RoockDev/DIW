@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form action="archivo.js" method="post"><!--archivo.js donde se recogen los datos del formulario -->
+
+<!-- Elemento cuadro texto-->
+<label for="texto">Nombre</label> <!--for e id sirven de vinculo entre label e input, el name sirve para , require es obligatorio, maxlength el numero maximo de caracteres -->
+<input type="text" id = "texto" name = "texto" placeholder="Teclea tu nombre" maxlength="50" require>
+
+
+<!-- Elemento contraseña-->
+<br>
+<br>
+<label for="contrasenia">Contraseña</label>
+<input type="password" id="contrasenia" name = "contrasenia">
+
+<!-- Elemento email-->
+<br>
+<br>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="correo@gmail.com">
+
+<!-- Elemento numero-->
+<br>
+<br>
+<label for="numero">Teclear edad</label>
+<input type="number" id="numero" name="numero" min="1" max="90" step = "5"> <!--step la distencia entre numero y numero-->
+
+<!-- Elemento  telefono -->
+<br>
+<br>
+<label for="tel">Nº telefono</label>
+<input type="tel" id="tel" name="tel" pattern="[0-9]{9}">
+
+<!-- Elemento  url -->
+<br>
+<br>
+<label for="url">Teclea una url</label>
+<input type="url" id = "url" name="url">
+
+
+<!-- Elemento  fecha -->
+
+<br>
+<br>
+<label for="fecha">Fecha Nacimiento</label>
+<input type="date" id="fecha" name="fecha">
+
+<!-- Elemento  hora -->
+
+<br>
+<br>
+<label for="hora">Teclea hora</label>
+<input type="time" id="hora" name="hora">
+
+<!-- Elemento  mes -->
+
+<br>
+<br>
+<label for="mes">Selecciona mes</label>
+<input type="month" id="mes" name="mes">
+
+<!-- Elemento  semana -->
+
+<br>
+<br>
+<label for="semana">Semana</label>
+<input type="week" id="semana" name="semana">
+
+
+<!-- Elemento  color -->
+
+<br>
+<br>
+<label for="color">Color favorito</label>
+<input type="color" id="color" name="color">
+
+<!-- Elemento  checkbox -->
+
+<br>
+<br>
+<input type="checkbox" id="check_h" name = "check">
+<label for="check_h">Hombre</label>
+<input type="checkbox" id="check_m" name = "check">
+<label for="check_m">Mujer</label>
+
+<!-- Elemento  radio -->
+
+<br>
+<br>
+<p>Selección de estudios realizados:</p>
+<input type="radio" id="daw" name="estudios" value="1">
+<label for="daw">DAW</label>
+
+<input type="radio" id="dam" name="estudios" value="2">
+<label for="dam">DAM</label>
+
+<input type="radio" id="asir" name="estudios" value="3">
+<label for="asir">ASIR</label>
+
+<!-- Elemento  rango -->
+
+<br>
+<br>
+<label for="rango">Selecciona el valor</label>
+<input type="range" name="rango" id="rango" min="0" max="50">
+
+
+
+<!-- Elemento  archivo -->
+
+<br>
+<br>
+<label for="archivo">Sube archivo</label>
+<input type="file" name="archivo" id="archivo">
+
+<!-- Elemento  button -->
+<input type="submit"  id="boton" value="Enviar">
+
+</form> 
+
+</body>
+</html>
