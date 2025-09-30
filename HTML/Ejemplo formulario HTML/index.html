@@ -1,129 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <form action="archivo.js" method="post">
+      <!--archivo.js donde se recogen los datos del formulario -->
+
+      <!-- Elemento cuadro texto-->
+      <label for="texto">Nombre</label>
+      <!--for e id sirven de vinculo entre label e input, el name sirve para , require es obligatorio, maxlength el numero maximo de caracteres -->
+      <input
+        type="text"
+        id="texto"
+        name="texto"
+        placeholder="Teclea tu nombre"
+        maxlength="50"
+        require
+      />
+
+      <!-- Elemento contraseña-->
+      <br />
+      <br />
+      <label for="contrasenia">Contraseña</label>
+      <input type="password" id="contrasenia" name="contrasenia" />
+
+      <!-- Elemento email-->
+      <br />
+      <br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="correo@gmail.com"
+      />
+
+      <!-- Elemento numero-->
+      <br />
+      <br />
+      <label for="numero">Teclear edad</label>
+      <input
+        type="number"
+        id="numero"
+        name="numero"
+        min="1"
+        max="90"
+        step="5"
+      />
+      <!--step la distencia entre numero y numero-->
+
+      <!-- Elemento  telefono -->
+      <br />
+      <br />
+      <label for="tel">Nº telefono</label>
+      <input type="tel" id="tel" name="tel" pattern="[0-9]{9}" />
+
+      <!-- Elemento  url -->
+      <br />
+      <br />
+      <label for="url">Teclea una url</label>
+      <input type="url" id="url" name="url" />
+
+      <!-- Elemento  fecha -->
+
+      <br />
+      <br />
+      <label for="fecha">Fecha Nacimiento</label>
+      <input type="date" id="fecha" name="fecha" />
+
+      <!-- Elemento  hora -->
+
+      <br />
+      <br />
+      <label for="hora">Teclea hora</label>
+      <input type="time" id="hora" name="hora" />
+
+      <!-- Elemento  mes -->
+
+      <br />
+      <br />
+      <label for="mes">Selecciona mes</label>
+      <input type="month" id="mes" name="mes" />
+
+      <!-- Elemento  semana -->
+
+      <br />
+      <br />
+      <label for="semana">Semana</label>
+      <input type="week" id="semana" name="semana" />
+
+      <!-- Elemento  color -->
+
+      <br />
+      <br />
+      <label for="color">Color favorito</label>
+      <input type="color" id="color" name="color" />
+
+      <!-- Elemento  checkbox -->
+
+      <br />
+      <br />
+      <input type="checkbox" id="check_h" name="check" />
+      <label for="check_h">Hombre</label>
+      <input type="checkbox" id="check_m" name="check" />
+      <label for="check_m">Mujer</label>
+
+      <!-- Elemento  radio -->
+
+      <br />
+      <br />
+      <p>Selección de estudios realizados:</p>
+      <input type="radio" id="daw" name="estudios" value="1" />
+      <label for="daw">DAW</label>
+
+      <input type="radio" id="dam" name="estudios" value="2" />
+      <label for="dam">DAM</label>
+
+      <input type="radio" id="asir" name="estudios" value="3" />
+      <label for="asir">ASIR</label>
+
+      <!-- Elemento  rango -->
+
+      <br />
+      <br />
+      <label for="rango">Selecciona el valor</label>
+      <input type="range" name="rango" id="rango" min="0" max="50" />
+
+      <!-- Elemento  archivo -->
+
+      <br />
+      <br />
+      <label for="archivo">Sube archivo</label>
+      <input type="file" name="archivo" id="archivo" />
+
+      <!-- Elemento  button -->
+      <input type="submit" id="boton" value="Enviar" />
+      <button type="submit">Enviar</button>
+      <br />
+
+      <input type="resert" id="reset" value="limpiar" />
+      <button type="reset">Restablecer</button>
+      <br /><br />
+
+      <input type="button" onclick="sxript.js" />
+      <button type="button" onclick="sxrip.js"></button>
+
+      <!-- Elemento select -->
+      <label for="pais">Listad de paises</label>
+      <select name="pais" id="pais">
+        <option value="ESPAÑA">ESPAÑA</option>
+        <option value="EEUU">EEUU</option>
+        <option value="CHINA">CHINA</option>
+        <option value="NORUEGA">NORUEGA</option>
+        <option value="FINLANDIA">FINLANDIA</option>
+      </select>
+
+      <label for="frutas">Escoge tus frutas preferidas</label>
+      <select name="frutas" id="frutas" multiple>
+        <option value="1">Peras</option>
+        <option value="2">Manzanas</option>
+        <option value="3">Limones</option>
+      </select>
+
+      <label for="navegadores">Elije o escribe un navegador</label>
+      <input list="navegador" name="nevagadores" id="navegadores">
+      <br><br>
+
+      <datalist id="navegador">
+        <option value=""></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+
+      </datalist>
+      <br><br>
+
+      <fieldset>
+        <legend>Cultura general</legend>
+        <p>Capital de España</p>
+        <label for="España">España</label>
+        <input type="radio">
+      </fieldset>
+    </form>
+    <!-- formulario 1 -->
+     <h1>formulario 1</h1>
+     <form action="archivo.js">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" placeholder="usuario....">
+      <label for="contrasenia">contrasenia</label>
+      <input type="password">
+      <input type="submit" value="Enviar">
+     </form>
+     <br>
+
+     <h1>formulario 2</h1>
+     <form action="archivo.js">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario">
+      <label for="tipo pasaje">Tipo de pasaje</label>
+      <select name="tipo pasaje" id="tipo pasaje">
+        <option value="1">Vip</option>
+        <option value="2">Especial</option>
+        <option value="3">Primera</option>
+        <option value="4">Segunda</option>
+      </select>
+      <input type="submit" value="Enviar">
+     </form>
+     <br><br>
+
+     <h1>formulario 3</h1>
+     <form action="archivo.js">
+      <label for="articulo">Articulo</label>
+     <input type="text" id="articulo" name="articulo" placeholder="Articulo">
+     <label for="opciones">Forma de entrega</label>
+     <input type="radio" id="aDomicilio">
+     <label for="aDomicilio">Envio a domicilio</label>
+
+     <input type="radio" id="recogida">
+     <label for="recogida">Recogida en tienda</label>
+     <input type="submit" value="Enviar">
+     </form>
+     <br><br>
+     <h1>Formulario 4</h1>
+     <form action="archivo.js">
+      <label for="numeroMatricula">Numero de matricula</label>
+      <input type="text" id="numeroMatricula" name="numeroMatricula" placeholder="Matricula">
+      <label for="">Materias</label>
+      <input type="checkbox">
+      <label for="">Matematicas</label>
+      <input type="checkbox">
+      <label for="">Algoritmia</label>
+      <input type="checkbox">
+      <label for="">Sistemas</label>
+      <input type="checkbox">
+      <label for="">Robotica</label>
+      <input type="submit" value="Enviar">  
+     </form>
+     <br><br>
+   
     
-<form action="archivo.js" method="post"><!--archivo.js donde se recogen los datos del formulario -->
-
-<!-- Elemento cuadro texto-->
-<label for="texto">Nombre</label> <!--for e id sirven de vinculo entre label e input, el name sirve para , require es obligatorio, maxlength el numero maximo de caracteres -->
-<input type="text" id = "texto" name = "texto" placeholder="Teclea tu nombre" maxlength="50" require>
-
-
-<!-- Elemento contraseña-->
-<br>
-<br>
-<label for="contrasenia">Contraseña</label>
-<input type="password" id="contrasenia" name = "contrasenia">
-
-<!-- Elemento email-->
-<br>
-<br>
-<label for="email">Email</label>
-<input type="email" id="email" name="email" placeholder="correo@gmail.com">
-
-<!-- Elemento numero-->
-<br>
-<br>
-<label for="numero">Teclear edad</label>
-<input type="number" id="numero" name="numero" min="1" max="90" step = "5"> <!--step la distencia entre numero y numero-->
-
-<!-- Elemento  telefono -->
-<br>
-<br>
-<label for="tel">Nº telefono</label>
-<input type="tel" id="tel" name="tel" pattern="[0-9]{9}">
-
-<!-- Elemento  url -->
-<br>
-<br>
-<label for="url">Teclea una url</label>
-<input type="url" id = "url" name="url">
-
-
-<!-- Elemento  fecha -->
-
-<br>
-<br>
-<label for="fecha">Fecha Nacimiento</label>
-<input type="date" id="fecha" name="fecha">
-
-<!-- Elemento  hora -->
-
-<br>
-<br>
-<label for="hora">Teclea hora</label>
-<input type="time" id="hora" name="hora">
-
-<!-- Elemento  mes -->
-
-<br>
-<br>
-<label for="mes">Selecciona mes</label>
-<input type="month" id="mes" name="mes">
-
-<!-- Elemento  semana -->
-
-<br>
-<br>
-<label for="semana">Semana</label>
-<input type="week" id="semana" name="semana">
-
-
-<!-- Elemento  color -->
-
-<br>
-<br>
-<label for="color">Color favorito</label>
-<input type="color" id="color" name="color">
-
-<!-- Elemento  checkbox -->
-
-<br>
-<br>
-<input type="checkbox" id="check_h" name = "check">
-<label for="check_h">Hombre</label>
-<input type="checkbox" id="check_m" name = "check">
-<label for="check_m">Mujer</label>
-
-<!-- Elemento  radio -->
-
-<br>
-<br>
-<p>Selección de estudios realizados:</p>
-<input type="radio" id="daw" name="estudios" value="1">
-<label for="daw">DAW</label>
-
-<input type="radio" id="dam" name="estudios" value="2">
-<label for="dam">DAM</label>
-
-<input type="radio" id="asir" name="estudios" value="3">
-<label for="asir">ASIR</label>
-
-<!-- Elemento  rango -->
-
-<br>
-<br>
-<label for="rango">Selecciona el valor</label>
-<input type="range" name="rango" id="rango" min="0" max="50">
-
-
-
-<!-- Elemento  archivo -->
-
-<br>
-<br>
-<label for="archivo">Sube archivo</label>
-<input type="file" name="archivo" id="archivo">
-
-<!-- Elemento  button -->
-<input type="submit"  id="boton" value="Enviar">
-
-</form> 
-
-</body>
+  </body>
 </html>
